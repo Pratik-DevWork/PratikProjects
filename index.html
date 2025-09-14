@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratik DevWork | Python Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container">
+            <!-- Left side: Logo & nav -->
+            <div class="header-left">
+                <span class="logo">&lt; &gt; &lt;/&gt; Pratik DevWork</span>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="mailto:lokhandepratik45@gmail.com">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Right side: Python Blog -->
+            <div class="brand">
+                <img src="python-pic.webp" alt="Python Logo">
+                <h1>Python Tutorial 1</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+        <article>
+            <figure>
+                <img src="image.webp" alt="Person typing on laptop with Python book">
+            </figure>
+            <header>
+                <h2>1. Introduction to Python</h2>
+            </header>
+            <p><em>"Python Tutorial for all Python Developer"</em></p>
+            <p><strong>- By &lt; &gt; &lt;/&gt; Pratik DevWork</strong></p>
+        </article>
+
+        <!-- ===== ASIDE: UPDATE INFO ===== -->
+        <aside>
+            <p><strong>Updated:</strong> 07:00</p>
+            <p>9 August 2025</p>
+        </aside>
+
+        <section>
+            <h3>Introduction</h3>
+            <p class="para">Python is a widely used general-purpose, high level programming language. It was created by
+                <b>Guido van Rossum in 1991</b> and further developed by the Python Software Foundation. It was designed with an
+                emphasis on code readability and its syntax allows programmers to express their concepts in fewer lines
+                of code. Python is a programming language that lets you work quickly and integrate systems more
+                efficiently.
+                Python is a dynamic, interpreted (bytecode-compiled) language. There are no type declarations of the
+                variables,
+                parameters, functions or methods in source code.
+            </p>
+            <p class="para">It is used for:</p>
+            <ul class="list">
+                <li>Web Development (Server side)</li>
+                <li>Software Development</li>
+                <li>System Scripting</li>
+                <li>App Development</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Identifiers</h3>
+            <p class="para">Identifier is a name used to identify a variable, function, class, module, etc. Identifiers
+                should start with a character or underscore, then use a digit. The characters A-Z, a-z and underscore (_)
+                and digits (0-9) can be used but no special character ( #, @, $, %, ! ) in Identifiers.</p>
+            <p class="para">Example:</p>
+            <p class="para">Valid Identifier</p>
+            <!-- CODE BOX WITH COPY BUTTON -->
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <pre class="color-white">
+# Valid identifiers
+
+my_variable = 10
+_name = "Pratik"
+value123 = 99
+                </pre>
+            </div>
+            <p class="para">Invalid Identifier</p>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <pre class="color-white">
+# Invalid identifiers
+
+1st_variable = 20  # Cannot start with a digit
+my-variable = 30   # Hyphen is not allowed
+my variable = 40   # Space is not allowed
+                </pre>
+            </div>
+        </section>
+
+        <section>
+            <h3>Reserved Keywords</h3>
+            <p class="para">Reserved Keywords (also called "Keywords") have predefined meaning and syntax in the language. These keywords are used to develop programming instructions.</p>
+            <p class="para">To check Keywords list:</p>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <pre class="color-white">
+# List of Python keywords
+
+import keyword
+print(keyword.kwlist)
+                </pre>
+            </div>
+        </section>
+
+        <section>
+            <h3>Variable</h3>
+            <p class="para">
+                Python variables are containers which store values. A variable is a name given to a memory location that
+                stores data. It is used to hold values that can be changed during the execution of a program. In Python,
+                variables are created by assigning a value to a name using the assignment operator (=). We don't need to
+                declare variables before using them, as Python is dynamically typed. It is the basic unit of storage in a
+                program.
+            </p>
+            <p class="para">Example:</p>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <pre class="color-white">
+# Variable declaration and assignment
+# Integer variable
+x = 10  
+name = "Pratik"    # String variable
+pi = 3.14          # Float 
+                </pre>
+            </div>
+        </section>
+
+        <section>
+            <h3>Comments</h3>
+            <p class="para">
+                Comments are lines in the code that are ignored by the interpreter during the execution of the
+                program. Comments enhance the readability of the code and help programmers to understand the code
+                carefully.
+            </p>
+            <p class="para">
+                There are three types of comments in Python.
+            </p>
+            <ul class="list">
+                <li>Single line Comments (Using #)</li>
+                <li>Multiline Comments (Using multiple #)</li>
+                <li>Docstring Comments (Using Triple ''')</li>
+            </ul>
+            <p class="para">Example:</p>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <pre class="color-white">
+# Single line comment
+x = 10  # This is a Variable
+# Hi, I am                 
+# Pratik Lokhande                 
+# This is a multiline comment
+"""This is a docstring comment"""
+                </pre>
+            </div>
+        </section>
+
+        <section>
+            <h3>Data Types</h3>
+            <p class="para">
+                Data types are used to define the type of data that can be stored in a variable. Python has several
+                built-in data types, including:
+            </p>
+            <p class="para">Types of Data types</p>
+            <ul class="list">
+                <li>Numeric</li>
+                <li>String</li>
+                <li>List</li>
+                <li>Sets</li>
+                <li>Tuple</li>
+                <li>Dictionary</li>
+                <li>Boolean</li>
+            </ul>
+
+            <h4 class="head">I. Numeric</h4>
+            <p>
+                Numeric data types are used to represent numbers.
+            </p>
+            <p class="para">Python has three Numeric data types: </p>
+            <ul class="list">
+                <li>Int</li>
+                <p>hold signed integer value for non-limited length</p>
+                <li>Float</li>
+                <p>hold floating point value and up to 15 decimal places</p>
+                <li>Complex</li>
+                <p>hold complex numbers in the form of a + bj, where a is the real part and b is the imaginary part</p>
+            </ul>
+
+            <h4 class="head">II. String</h4>
+            <p class="para">
+                String data type is used to represent a sequence of characters. Strings are enclosed in single
+                quotes (' ') or double quotes (" "). Python supports Unicode, allowing for the representation of
+                characters from various languages.
+            </p>
+
+            <h4 class="head">III. List</h4>
+            <p class="para">
+                List data type is used to represent an ordered collection of items. Lists hold different data and
+                lists are mutable, meaning their elements can be changed after creation. Lists are defined using
+                square brackets ([ ]), and elements are separated by commas.
+            </p>
+
+            <h4 class="head">IV. Sets</h4>
+            <p class="para">
+                Set data type is used to represent an unordered collection of unique items. Sets don't hold
+                duplicate values and sets are mutable, meaning their elements can be changed after creation. Sets are
+                defined using curly braces ({ }), and elements are separated by commas.
+            </p>
+
+            <h4 class="head">V. Tuple</h4>
+            <p class="para">
+                Tuple data type is used to represent an ordered collection of items. Tuples are immutable, meaning
+                their elements cannot be changed after creation. Data in Tuple is write-protected. Tuples are
+                defined using parentheses ( ), and elements are separated by commas.
+            </p>
+
+            <h4 class="head">VI. Dictionary</h4>
+            <p class="para">
+                Dictionary data type is used to represent a collection of key-value pairs. Dictionaries are
+                unordered and mutable, meaning their elements can be changed after creation. Dictionaries are
+                defined using curly braces ({ }), with each key-value pair separated by a colon (:).
+            </p>
+
+            <h4 class="head">VII. Boolean</h4>
+            <p class="para">
+                Boolean data type is used to represent truth values. It can have two possible values: True or False.
+                Booleans are often used in conditional statements and logical operations. It is denoted by class
+                bool. Boolean values will be either True or False.
+            </p>
+            <p>Note: True and False with capital 'T' and 'F' are valid Boolean and Both are Reserved Keywords</p>
+            <p class="para">Example:</p>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <pre class="color-white">
+# Numeric data types
+x = 10          # Integer
+y = 3.14        # Float
+z = 2 + 3j      # Complex number
+
+# String data type
+name = "Pratik"
+
+# List data type
+# Index exist in list
+my_list = [1, 2, 3, "Python"]
+
+# Tuple data type
+my_tuple = (1, 2, 3)
+
+# Set data type
+my_set = {1, 2, 3}
+
+# Dictionary data type
+my_dict = {"name": "Pratik", "surname": "Lokhande", "class": 9, "age": 15}
+
+# Boolean data type
+is_active = True
+                </pre>
+            </div>
+        </section>
+
+        <section>
+            <h3>Operators</h3>
+            <p class="para">
+                Python operators in general are used to perform operations on the values and variables. These are standard symbols used for the purpose of logical and arithmetic operations.
+            </p>
+            <p class="para"><b>OPERATORS</b>: Are the special symbols. Eg: -, +, *, /, etc.</p>
+            <p class="para"><b>OPERAND</b>: It is the value on which the operator is applied</p>
+
+            <h4 class="head">I. Arithmetic Operators</h4>
+            <p class="para">Arithmetic operators are used to perform mathematical operations like addition, subtraction, multiplication and division.</p>
+            <ul class="list">
+                <li>+</li>
+                <p>Addition: Add two operands</p>
+                <li>-</li>
+                <p>Subtraction: Subtract two operands</p>
+                <li>*</li>
+                <p>Multiplication: Multiplies two operands</p>
+                <li>/</li>
+                <p>Division (Float): Divides first operand with second</p>
+                <li>//</li>
+                <p>Division (Floor): Divides first operand with second</p>
+                <li>%</li>
+                <p>Modulus: Return the remainder when the first operand is divided by the second</p>
+                <li>**</li>
+                <p>Exponentiation: Returns first raised to power second</p>
+            </ul>
+            <p class="para">Example:</p>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <pre class="color-white">
+# Arithmetic operators
+
+a = 10
+b = 5
+
+# Addition
+print(a + b)  # Output: 15
+
+# Subtraction
+print(a - b)  # Output: 5   
+
+# Multiplication
+print(a * b)  # Output: 50
+
+# Division (Float)
+print(a / b)  # Output: 2.0 
+
+# Division (Floor)
+print(a // b) # Output: 2   
+
+# Modulus
+print(a % b)  # Output: 0
+
+# Exponentiation
+print(a ** b) # Output: 100000
+                </pre>
+            </div>
+
+            <h4 class="head">II. Precedence</h4>
+            <p class="para">Precedence of operators determines the order in which operations are performed in an
+                expression. Operators with higher precedence are evaluated before those with lower precedence.</p>
+            <p class="para">Precedence of Operators:</p>
+            <ul class="list">
+                <li>Parentheses ( ) - Highest Precedence</li>
+                <li>Exponentiation (**)</li>
+                <li>Bitwise NOT ( ~ )</li>
+                <li>Multiplication (*), Division (/), Floor Division (//), Modulus (%)</li>
+                <li>Addition (+), Subtraction (-)</li>
+                <li>Bitwise AND (&), Bitwise XOR (^)</li>
+                <li>Relational Operator: (&gt;, &lt;, ==, !=, &gt;=, &lt;= )</li>
+                <li>Assignment Operator: ( =, += , -=, *=, /=, %=, //=, **=, &=, /=, ^=, &gt;&gt;=, &lt;&lt;= )</li>
+                <li>Identity Operator: is, is not</li>
+                <li>Membership Operator: in, not in</li>
+                <li>Logical Operator: not</li>
+                <li>Logical Operator: or</li>
+                <li>Logical Operator: and</li>
+            </ul>
+
+            <h4 class="head">III. Relational Operator</h4>
+            <p class="para">
+                Relational operators are used to compare two values and return a boolean result (True or False).
+                These operators are commonly used in conditional statements and loops. These operators are also
+                called Comparison Operators.
+            </p>
+            <p class="para">Types of Relational Operators: </p>
+            <ul class="list">
+                <li>==</li>
+                <p>Equal to: Returns True if both operands are equal</p>
+                <li>!=</li>
+                <p>Not equal to: Returns True if both operands are not equal</p>
+                <li>&gt;</li>
+                <p>Greater than: Returns True if the left operand is greater than the right operand</p>
+                <li>&lt;</li>
+                <p>Less than: Returns True if the left operand is less than the right operand</p>
+                <li>&gt;=</li>
+                <p>Greater than or equal to: Returns True if the left operand is greater than or equal to the right
+                    operand</p>
+                <li>&lt;=</li>
+                <p>Less than or equal to: Returns True if the left operand is less than or equal to the right
+                    operand</p>
+            </ul>
+            <p class="para">Example:</p>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <pre class="color-white">
+# Relational operators
+
+a = 10
+b = 5
+
+print(a == b)  # Output: False
+
+# Not equal to
+print(a != b)  # Output: True
+
+# Greater than
+print(a > b)  # Output: True
+
+# Less than
+print(a < b)  # Output: False
+
+# Greater than or equal to
+print(a >= b) # Output: True
+
+# Less than or equal to
+print(a <= b) # Output: False
+                </pre>
+            </div>
+
+            <h4 class="head">IV. Assignment Operator</h4>
+            <p class="para">
+                Assignment operators are used to assign values to variables. The basic assignment operator is '=',
+                but there are several compound assignment operators that combine assignment with other operations.
+            </p>
+            <p class="para">Types of Assignment Operators: </p>
+            <ul class="list">
+                <li>=</li>
+                <p>Assigns the value of the right operand to the left operand</p>
+                <p class="syn mgn">syntax: x = y + z</p>
+                <li>+=</li>
+                <p>Adds the right operand to the left operand and assigns the result to the left operand</p>
+                <p class="syn">syntax: a += b</p>
+                <p class="syn2">a = a + b</p>
+                <li>-=</li>
+                <p>Subtracts the right operand from the left operand and assigns the result to the left operand</p>
+                <p class="syn">syntax: a -= b</p>
+                <p class="syn2">a = a - b</p>
+                <li>*=</li>
+                <p>Multiplies the left operand by the right operand and assigns the result to the left operand</p>
+                <p class="syn">syntax: a *= b</p>
+                <p class="syn2">a = a * b</p>
+                <li>/=</li>
+                <p>Divides the left operand by the right operand and assigns the result to the left operand</p>
+                <p class="syn">syntax: a /= b</p>
+                <p class="syn2">a = a / b</p>
+                <li>%=</li>
+                <p>Calculates the modulus of the left operand by the right operand and assigns the result to the
+                    left operand</p>
+                <p class="syn">syntax: a %= b</p>
+                <p class="syn2">a = a % b</p>
+                <li>//=</li>
+                <p>Performs floor division on the left operand by the right operand and assigns the result to the
+                    left operand</p>
+                <p class="syn">syntax: a //= b</p>
+                <p class="syn2">a = a // b</p>
+                <li>**=</li>
+                <p>Raises the left operand to the power of the right operand and assigns the result to the left
+                    operand</p>
+                <p class="syn">syntax: a **= b</p>
+                <p class="syn2">a = a ** b</p>
+                <li>&=</li>
+                <p>Performs Bitwise AND on operand and assign value to left operand</p>
+                <p class="syn">syntax: a &= b</p>
+                <p class="syn2">a = a & b</p>
+                <li>|=</li>
+                <p>Performs Bitwise OR on operand and assign value to left operand</p>
+                <p class="syn">syntax: a |= b</p>
+                <p class="syn2">a = a | b</p>
+                <li>^=</li>
+                <p>Performs Bitwise XOR on operand and assign value to left operand</p>
+                <p class="syn">syntax: a ^= b</p>
+                <p class="syn2">a = a ^ b</p>
+                <li>&lt;&lt;=</li>
+                <p>Performs Bitwise Left Shift on operand and assign value to left operand</p>
+                <p class="syn">syntax: a &lt;&lt;= b</p>
+                <p class="syn2">a = a &lt;&lt; b</p>
+                <li>&gt;&gt;=</li>
+                <p>Performs Bitwise Right Shift on operand and assign value to left operand</p>
+                <p class="syn">syntax: a &gt;&gt;= b</p>
+                <p class="syn2">a = a &gt;&gt; b</p>
+            </ul>
+            <p class="para">Example:</p>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <pre class="color-white">
+# Assignment operators
+
+x = 5       # Assign 5 to x
+y = 6       # Assign 6 to y
+
+x += y      # x = x + y → 11
+print(x)
+
+x -= y      # x = 11 - 6 → 5
+print(x)
+
+x *= y      # x = 5 * 6 → 30
+print(x)
+
+x /= y      # x = 30 / 6 → 5.0
+print(x)
+
+x %= y      # x = 5.0 % 6 → 5.0 (remainder)
+print(x)
+
+x //= y     # x = 5.0 // 6 → 0.0 (floor division)
+print(x)
+
+x **= y     # x = 0.0 ** 6 → 0.0
+print(x)
+                </pre>
+            </div>
+
+            <h4 class="head">V. Membership Operators</h4>
+            <p class="para">
+                <code>in</code> and <code>not in</code> are the membership operators; both are used to test whether a value or variable is
+                in a sequence.
+                It returns "True" and "False"
+            </p>
+            <ul class="list">
+                <li>in: True if the variable is found in the sequence.</li>
+                <li>not in: True if the value is not found in the sequence.</li>
+            </ul>
+            <p class="para">Example:</p>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <pre class="color-white">
+# Example of membership operators
+
+my_list = [1, 2, 3, 4, 5]
+
+# Using 'in'
+print(3 in my_list)          # Output: True
+
+# Using 'not in'
+print(10 not in my_list)     # Output: True
+
+my_string = "Python"
+
+print('P' in my_string)      # Output: True
+print('z' not in my_string)  # Output: True
+                </pre>
+            </div>
+
+            <h4 class="head">VI. Identity Operators</h4>
+            <p class="para">
+                <code>is</code> and <code>is not</code> are the identity operators; both are used to check if two values are located on
+                the same part of memory.
+            </p>
+            <ul class="list">
+                <li>is: True if the operands are identical.</li>
+                <li>is not: True if the operands are not identical.</li>
+            </ul>
+            <p class="para">Example:</p>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <pre class="color-white">
+# Example of identity operators
+
+a = [1, 2, 3]
+b = a         # b references the same list as a
+c = [1, 2, 3] # c is a separate list with the same content
+
+# Using 'is'
+print(a is b)   # True → a and b refer to the exact same object in memory
+print(a is c)   # False → a and c have same values but are stored at different memory locations
+
+# Using 'is not'
+print(a is not c)  # True → a and c are not the same object in memory
+                </pre>
+            </div>
+
+            <h4 class="head">Bitwise Operators</h4>
+            <p class="para">
+                Bitwise operators in Python are special operators that work at the bit level — they perform
+                operations directly on the binary (0s and 1s) representation of integers.
+            </p>
+            <p class="para">Types of Bitwise Operators</p>
+            <ul class="list">
+                <li>Bitwise AND (&)</li>
+                <li>Bitwise OR (|)</li>
+                <li>Bitwise XOR (^)</li>
+                <li>Bitwise NOT ( ~ )</li>
+                <li>Bitwise Left Shift (&lt;&lt;)</li>
+                <li>Bitwise Right Shift (&gt;&gt;)</li>
+            </ul>
+            <p class="para">Example:</p>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <pre class="color-white">
+a = 5   # Binary: 0101
+b = 3   # Binary: 0011
+
+# 1  → Binary: 0001 (AND)
+print(a & b)
+
+# 7  → Binary: 0111 (OR)
+print(a | b)
+
+# 6  → Binary: 0110 (XOR)
+print(a ^ b)
+
+# -6 → Inverts bits (two's complement form)         
+print(~a)
+
+# 10 → Binary: 1010 (Left shift by 1)
+print(a << 1)
+
+# 1 → Binary: 0001 (Right shift by 1)
+print(b >> 1)       
+                </pre>
+            </div>
+        </section>
+
+        <section>
+            <h3><b>Expressions In Python</b></h3>
+            <p class="para">
+                An expression is a combination of operands and operators that produces a value. It can be as
+                simple as a single value or as complex as a combination of multiple values and operations.
+            </p>
+            <p class="para">Types of Expressions</p>
+            <ul class="list">
+                <li><b>Constant Expression</b></li>
+                <p class="mgn">Contains only constant values</p>
+                <li><b>Variable Expression</b></li>
+                <p class="mgn">Contains variables and their values</p>
+                <li><b>Assignment Expression</b></li>
+                <p class="mgn">Assigns a value to a variable and returns the value</p>
+                <li><b>Conditional Expression</b></li>
+                <p class="mgn">Evaluates a condition and returns one of two values based on the condition</p>
+                <li><b>Integral Expression</b></li>
+                <p class="mgn">Contains integral values and operations</p>
+                <li><b>Floating Expression</b></li>
+                <p class="mgn">Contains floating-point values and operations</p>
+                <li><b>Combination Expression</b></li>
+                <p class="mgn">Combines multiple expressions using operators</p>
+                <li><b>Arithmetic Expression</b></li>
+                <p class="mgn">Contains arithmetic operators and operands</p>
+                <li><b>Relational Expression</b></li>
+                <p class="mgn">Contains relational operators and operands</p>
+                <li><b>Logical Expression</b></li>
+                <p class="mgn">Contains logical operators and operands</p>
+                <li><b>Bitwise Expression</b></li>
+                <p class="mgn">Contains bitwise operators and operands</p>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Data Type Conversion</h3>
+            <p class="para">
+                Data type conversion is the process of converting a value from one data type to another. In Python, this
+                can be done using built-in functions such as int(), float(), str(), and others.
+            </p>
+            <p class="para">Types of Data Type Conversion</p>
+            <ul class="list">
+                <li><b>Implicit Conversion</b></li>
+                <p class="mgn">Automatic conversion by Python without losing information</p>
+                <li><b>Explicit Conversion</b></li>
+                <p class="mgn">Manual conversion using built-in functions</p>
+            </ul>
+            <p class="para">Example:</p>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <pre class="color-white">
+# Implicit Conversion
+x = 10          # Integer
+y = 3.14        # Float
+z = x + y       # Implicitly converts x to float
+print(z)        # Output: 13.14
+
+# Explicit Conversion
+a = "5"         # String
+b = int(a)      # Converts string to integer
+print(b)        # Output: 5
+c = float(b)    # Converts integer to float
+print(c)        # Output: 5.0
+                </pre>
+            </div>
+        </section>
+
+        <section>
+            <h3><code>Input()</code> <b>Function</b></h3>
+            <p class="para">
+                The <code>input()</code> function is used to take input from the user. It reads a line from input,
+                converts it into a string, and returns it. By default, the input is treated as a string.
+            </p>
+            <p class="syn">Syntax: <code>input(prompt)</code></p>
+            <p class="para">Example:</p>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <pre class="color-white">
+# Taking input from the user
+
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+print("Hello, " + name + "! You are " + age + " years old.")
+                </pre>
+            </div>
+        </section>
+
+        <section>
+            <h3><b>Mutable and Immutable Objects</b></h3>
+            <p class="para">
+                In Python, objects can be classified as mutable or immutable based on whether their state can be changed
+                after creation.
+            </p>
+            <h4 class="head">Mutable Objects</h4>
+            <p class="para">
+                Mutable objects can be changed after they are created. This means you can modify their content without
+                creating a new object.
+            </p>
+            <p class="para">Example:</p>
+            <ul class="list">
+                <li>List</li>
+                <li>Dictionary</li>
+                <li>Set</li>
+            </ul>
+            <h4 class="head">Immutable Objects</h4>
+            <p class="para">
+                Immutable objects cannot be changed after they are created. Any operation that seems to modify an
+                immutable object actually creates a new object.
+            </p>
+            <p class="para">Example:</p>
+            <ul class="list">
+                <li>String</li>
+                <li>Tuple</li>
+                <li>Integer</li>
+                <li>Float</li>
+                <li>Frozen Set</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="last">
+            <div>
+                <a href="https://wa.me/8766077981" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                    <p>WhatsApp</p>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/PratikLokhande-coder" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                    <p>GitHub</p>
+                </a>
+            </div>
+            <div>
+                <a href="https://app.netlify.com/teams/pratiklokhande-coder/projects" target="_blank" title="Netlify">
+                    <i class="fab fa-neos"></i>
+                    <p>Netlify</p>
+                </a>
+            </div>
+        </div>
+        <p>&copy; 2025 Pratik DevWork | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
